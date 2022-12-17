@@ -1,38 +1,37 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "avl",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Advanced Vanilla Logistics",
+  "description": "Enhanced inventory management purely on the client-side",
   "authors": [
-    "Me!"
+    "Zischknall"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/zischknall/Advanced-Vanilla-Logistics"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/avl/icon.png",
 
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleMod"
+    "client": [
+      "dev.zskn.avl.AdvancedVanillaLogistics"
+    ],
+    "modmenu": [
+      "dev.zskn.avl.AVLConfig"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "avl.mixins.json"
   ],
-
   "depends": {
     "fabricloader": ">=0.14.11",
     "fabric-api": "*",
     "minecraft": "~1.19.3",
-    "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
+    "java": ">=17",
+    "cloth-config": "^9.0.94"
   }
 }
