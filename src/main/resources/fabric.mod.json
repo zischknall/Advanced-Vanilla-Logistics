@@ -21,7 +21,7 @@
       "dev.zskn.avl.AdvancedVanillaLogistics"
     ],
     "modmenu": [
-      "dev.zskn.avl.AVLConfig"
+      "dev.zskn.avl.config.AVLConfig"
     ]
   },
   "mixins": [
