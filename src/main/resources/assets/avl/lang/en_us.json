@@ -1,0 +1,12 @@
+{
+  "title.avl.config": "Advanced Vanilla Logistics Config",
+  "category.avl.blockbreaking": "Block breaking tweaks",
+  "option.avl.blockbreaking.toggle": "Enable breaking blacklist",
+  "option.avl.blockbreking.toggle.tooltip": "Enables a blacklist of blocks which should not be mined",
+  "option.avl.blockbreaking.dropdown": "Blacklist input",
+  "option.avl.blockbreaking.blacklist": "Blacklist",
+  "category.avl.itempickup": "Item pickup tweaks",
+  "option.avl.itempickup.toggle": "Enable pickup blacklist",
+  "option.avl.itempickup.dropdown": "Blacklist input",
+  "option.avl.itempickup.blacklist": "Blacklist"
+}

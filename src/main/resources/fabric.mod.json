@@ -4,24 +4,25 @@
   "version": "${version}",
 
   "name": "Advanced Vanilla Logistics",
-  "description": "Enhanced inventory management purely on the client-side",
+  "description": "Enhanced client-side inventory management tweaks",
   "authors": [
     "Zischknall"
   ],
   "contact": {
-    "sources": "https://github.com/zischknall/Advanced-Vanilla-Logistics"
+    "sources": "https://github.com/zischknall/Advanced-Vanilla-Logistics",
+    "issues": "https://github.com/zischknall/Advanced-Vanilla-Logistics/issues"
   },
 
   "license": "MIT",
   "icon": "assets/avl/icon.png",
 
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "client": [
       "dev.zskn.avl.AdvancedVanillaLogistics"
     ],
     "modmenu": [
-      "dev.zskn.avl.config.AVLConfig"
+      "dev.zskn.avl.config.ModMenuConfig"
     ]
   },
   "mixins": [

@@ -1,6 +1,6 @@
 package dev.zskn.avl.mixin;
 
-import dev.zskn.avl.config.AVLConfig;
+import dev.zskn.avl.AdvancedVanillaLogistics;
 import net.minecraft.block.Block;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerInteractionManager;
@@ -39,12 +39,12 @@ public abstract class ClientPlayerInteractionManagerMixin {
     }
 
     private boolean isBlacklistedAndFeatureEnabled(BlockPos pos) {
-        if (!AVLConfig.tweakBreakBlockToggle) {
+        if (!AdvancedVanillaLogistics.config.tweakBreakBlockToggle) {
             return false;
         }
 
         assert this.client.world != null;
         Block block = this.client.world.getBlockState(pos).getBlock();
-        return AVLConfig.tweakBreakBlockBlacklist.contains(block);
+        return AdvancedVanillaLogistics.config.tweakBreakBlockBlacklist.contains(block);
     }
 }
